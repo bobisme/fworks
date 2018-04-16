@@ -1,0 +1,39 @@
+= Asciidoc
+
+## this is a new world
+
+TIP: don't fuck up
+
+what?
+
+NOTE: you fucked up
+
+== Poney Races
+
+Poney races can be read, created, updated and deleted by a user having the
+RACE_ORGANIZER role. A poneydrome ID is used to identify where to read
+or save the poney race.
+
+=== Read
+
+[cols="h,5a"]
+|===
+| URL
+| */api/admin/[poneydromeId]/races/[raceId]*
+
+| Method
+| GET
+
+| Response Body
+| [source,json]
+{
+  "hello": "there"
+}
+|===
+
+[source,ruby]
+----
+get '/' do
+  'shit'
+end
+----
